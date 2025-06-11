@@ -1,0 +1,234 @@
+{
+    "intents": [
+        {
+            "tag": "greeting",
+            "patterns": [
+                "Hi",
+                "Hello",
+                "Hey",
+                "Good day",
+                "Greetings",
+                "What's up?",
+                "How is it going?",
+                "Hi there",
+                "Hey there",
+                "Good morning",
+                "Good afternoon",
+                "Good evening",
+                "Howdy",
+                "Hiya"
+            ],
+            "responses": [
+                "Hello! How can I help you today?",
+                "Hi there! What can I do for you?",
+                "Greetings! How may I assist you?",
+                "Hey! Nice to meet you!",
+                "Hello! I'm here to help. What do you need?"
+            ]
+        },
+        {
+            "tag": "goodbye",
+            "patterns": [
+                "Bye",
+                "See you later",
+                "Goodbye",
+                "Take care",
+                "See you soon",
+                "Talk to you later",
+                "Catch you later",
+                "Until next time",
+                "Have a great day",
+                "Farewell",
+                "Adios",
+                "Ciao"
+            ],
+            "responses": [
+                "Goodbye! Have a great day!",
+                "See you later!",
+                "Take care!",
+                "Until next time!",
+                "Bye! Come back soon!",
+                "Farewell! Stay safe!"
+            ]
+        },
+        {
+            "tag": "thanks",
+            "patterns": [
+                "Thanks",
+                "Thank you",
+                "That's helpful",
+                "Thank's a lot!",
+                "Thanks for helping",
+                "Much appreciated",
+                "Thanks a bunch",
+                "I appreciate it",
+                "Thank you so much",
+                "Grateful"
+            ],
+            "responses": [
+                "You're welcome!",
+                "Happy to help!",
+                "My pleasure!",
+                "Glad I could assist you!",
+                "Anytime!",
+                "You're very welcome!",
+                "It was my pleasure to help!"
+            ]
+        },
+        {
+            "tag": "about",
+            "patterns": [
+                "What can you do?",
+                "Who are you?",
+                "What are you?",
+                "What is your purpose?",
+                "Tell me about yourself",
+                "What are your capabilities?",
+                "How can you help me?",
+                "What do you do?"
+            ],
+            "responses": [
+                "I'm an AI chatbot created to assist you with various questions and tasks!",
+                "I'm a friendly AI assistant here to help with your questions!",
+                "I'm an intelligent chatbot powered by neural networks. I can chat, answer questions, and help you!",
+                "I'm your AI companion, ready to assist with information and conversation!"
+            ]
+        },
+        {
+            "tag": "weather",
+            "patterns": [
+                "What's the weather like?",
+                "How's the weather?",
+                "Is it raining?",
+                "Will it rain today?",
+                "Weather forecast",
+                "Is it sunny?",
+                "What's the temperature?",
+                "Is it cold?",
+                "Is it hot?"
+            ],
+            "responses": [
+                "I can't check real-time weather, but I recommend checking a weather app or website!",
+                "For current weather, please check your local weather service!",
+                "I don't have access to live weather data, but weather.com or your phone's weather app can help!",
+                "Try asking a weather service for the most up-to-date information!"
+            ]
+        },
+        {
+            "tag": "time",
+            "patterns": [
+                "What time is it?",
+                "Current time",
+                "What's the time?",
+                "Time please",
+                "Can you tell me the time?",
+                "What's the current time?"
+            ],
+            "responses": [
+                "I don't have access to real-time data, please check your device's clock!",
+                "For current time, check your system clock!",
+                "I can't tell time, but your device can show you the current time!",
+                "Check your computer or phone for the current time!"
+            ]
+        },
+        {
+            "tag": "help",
+            "patterns": [
+                "Help",
+                "I need help",
+                "Can you help me?",
+                "What should I do?",
+                "Help me",
+                "Support",
+                "Assistance",
+                "I'm stuck",
+                "I need assistance"
+            ],
+            "responses": [
+                "I'm here to help! What do you need assistance with?",
+                "Of course! How can I assist you?",
+                "I'd be happy to help! What's your question?",
+                "Sure thing! Tell me what you need help with.",
+                "I'm ready to assist! What can I do for you?"
+            ]
+        },
+        {
+            "tag": "joke",
+            "patterns": [
+                "Tell me a joke",
+                "Make me laugh",
+                "Say something funny",
+                "Do you know any jokes?",
+                "Joke please",
+                "Tell me something funny",
+                "Make me smile",
+                "I need a laugh"
+            ],
+            "responses": [
+                "Why don't scientists trust atoms? Because they make up everything!",
+                "I told my wife she was drawing her eyebrows too high. She looked surprised!",
+                "Why do programmers prefer dark mode? Because light attracts bugs!",
+                "What do you call a bear with no teeth? A gummy bear!",
+                "Why don't eggs tell jokes? They'd crack each other up!"
+            ]
+        },
+        {
+            "tag": "name",
+            "patterns": [
+                "What's your name?",
+                "What should I call you?",
+                "Do you have a name?",
+                "Who are you?",
+                "What are you called?",
+                "Your name?"
+            ],
+            "responses": [
+                "You can call me ChatBot!",
+                "I'm your friendly AI assistant!",
+                "I'm ChatBot, nice to meet you!",
+                "I go by ChatBot, but you can call me whatever you like!",
+                "My name is ChatBot, and I'm here to help!"
+            ]
+        },
+        {
+            "tag": "age",
+            "patterns": [
+                "How old are you?",
+                "What's your age?",
+                "When were you created?",
+                "Are you old?",
+                "When were you born?",
+                "Your age?"
+            ],
+            "responses": [
+                "I'm timeless! I exist in the digital realm.",
+                "Age is just a number for AI like me!",
+                "I was just created, so I'm pretty new!",
+                "I don't age like humans do - I'm always learning and updating!",
+                "I'm as old as the code that created me, but my knowledge is constantly growing!"
+            ]
+        },
+        {
+            "tag": "compliment",
+            "patterns": [
+                "You're awesome",
+                "You're great",
+                "You're helpful",
+                "You're smart",
+                "Good job",
+                "Well done",
+                "You're amazing",
+                "I like you",
+                "You're the best",
+                "You're wonderful"
+            ],
+            "responses": [
+                "Thank you! That means a lot to me!",
+                "You're very kind! I appreciate the compliment!",
+                "Aww, thank you! You're pretty awesome yourself!",
+                "That's so nice of you to say! I'm happy I could help!",
+                "Thanks! I try my best to be helpful!"
+            ]
+        }
+    ]
+}
