@@ -180,31 +180,6 @@ chatbot-project/
 └── 📊 training_plots.png            # Model performance graphs
 ```
 
-## 🛠️ Customization
-
-### Adding New Intents
-
-1. **Edit `intents.json`:**
-   ```json
-   {
-     "tag": "music",
-     "patterns": [
-       "Play music",
-       "What's your favorite song?",
-       "Do you like music?"
-     ],
-     "responses": [
-       "I love music! What genre do you prefer?",
-       "Music is amazing! I wish I could hear it.",
-       "What's your favorite artist?"
-     ]
-   }
-   ```
-
-2. **Retrain the model:**
-   - Delete `chatbot_model.h5`, `words.pkl`, `classes.pkl`
-   - Run the script again to retrain with new data
-
 ### Modifying Responses
 
 Simply edit the responses in `intents.json` and retrain the model.
@@ -220,34 +195,6 @@ model.add(Dense(128, activation='relu'))  # Additional layer
 # Adjust training
 history = model.fit(..., epochs=300)      # More training
 ```
-
-## 🔧 Advanced Features
-
-### Performance Optimization
-
-The chatbot includes several optimizations:
-- **Model Caching**: Saves trained model for instant loading
-- **Efficient Preprocessing**: Optimized text processing pipeline
-- **Memory Management**: Careful handling of large datasets
-- **Batch Processing**: Support for multiple simultaneous requests
-
-### Error Handling
-
-Robust error handling for:
-- Missing dependencies
-- Corrupted model files
-- Invalid input text
-- Network connectivity issues
-- File permission problems
-
-### Extensibility
-
-Easy to extend with:
-- **Web Interface**: Flask integration ready
-- **Database Storage**: User conversation logging
-- **API Endpoints**: RESTful service capability
-- **Voice Integration**: Speech-to-text compatibility
-- **Multi-language**: Internationalization support
 
 ## 🌐 Deployment
 
@@ -269,30 +216,6 @@ The code includes Flask integration for web deployment:
 # Enable web interface (if Flask is installed)
 # Uncomment web server code and run:
 python -c "from universal_chatbot_fixed import launch_web; launch_web()"
-```
-
-### Docker Deployment
-
-Create a `Dockerfile`:
-```dockerfile
-FROM python:3.9-slim
-WORKDIR /app
-COPY requirements.txt .
-RUN pip install -r requirements.txt
-COPY . .
-CMD ["python", "universal_chatbot_fixed.py"]
-```
-
-## 🧪 Testing
-
-### Automated Testing
-
-The chatbot includes comprehensive testing:
-
-```python
-# Run performance tests
-python universal_chatbot_fixed.py
-# Select option 3: Test Performance
 ```
 
 ### Manual Testing
@@ -350,34 +273,6 @@ import logging
 logging.basicConfig(level=logging.DEBUG)
 ```
 
-## 📚 Learning Resources
-
-### Understanding the Code
-
-Key concepts to learn:
-- **Neural Networks**: How deep learning works
-- **Natural Language Processing**: Text preprocessing techniques
-- **Intent Classification**: Pattern recognition in text
-- **TensorFlow/Keras**: Deep learning framework usage
-
-### Recommended Reading
-
-- [TensorFlow Documentation](https://tensorflow.org/guide)
-- [NLTK Book](https://nltk.org/book/)
-- [Neural Networks and Deep Learning](http://neuralnetworksanddeeplearning.com/)
-- [Python GUI Programming with Tkinter](https://docs.python.org/3/library/tkinter.html)
-
-## 🤝 Contributing
-
-### Ways to Contribute
-
-1. **Add New Intents**: Expand conversation capabilities
-2. **Improve Responses**: Make conversations more natural
-3. **Optimize Performance**: Enhance speed and accuracy
-4. **Add Features**: Web interface, voice support, etc.
-5. **Fix Bugs**: Report and resolve issues
-6. **Documentation**: Improve guides and examples
-
 ### Development Setup
 
 ```bash
@@ -401,31 +296,6 @@ python -m pytest tests/
 ## 📝 License
 
 This project is open source and available under the [MIT License](LICENSE).
-
-## 🙏 Acknowledgments
-
-- **TensorFlow Team** - Deep learning framework
-- **NLTK Developers** - Natural language processing tools
-- **Python Community** - Programming language and ecosystem
-- **Open Source Contributors** - Various libraries and tools
-
-## 📞 Support
-
-### Getting Help
-
-1. **Check Documentation**: Read this README thoroughly
-2. **Search Issues**: Look for similar problems in issues
-3. **Create Issue**: Report bugs or request features
-4. **Community Forums**: Ask questions in Python/ML communities
-
-### Contact Information
-
-- **Project Repository**: [GitHub Link]
-- **Documentation**: [Wiki Link]
-- **Issue Tracker**: [Issues Link]
-- **Discussions**: [Discussions Link]
-
----
 
 ## 🎉 Success Story
 
